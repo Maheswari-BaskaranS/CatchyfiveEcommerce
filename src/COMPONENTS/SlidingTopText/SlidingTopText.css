@@ -1,0 +1,26 @@
+.sliding-text-container {
+    background-color: #68c430;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 5px 0px;
+  }
+  
+  .sliding-text {
+    color: white;
+    display: inline-block;
+    animation: slide 10s linear infinite; /* Adjust duration and timing function as needed */
+  }
+  
+  @keyframes slide {
+    from {
+      transform: translateX(100vw);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .animate .sliding-text {
+    animation-play-state: running;
+  }

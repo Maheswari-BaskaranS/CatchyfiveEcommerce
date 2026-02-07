@@ -1,0 +1,21 @@
+.categorytopbar{
+    width: 100%;
+    padding: 10px 20px;
+    border: 2px solid var(--col1);
+    border-radius: 35px;
+    margin: 20px 0px;
+}
+.CategorySelector{
+    display: none !important;
+}
+@media screen and (min-width: 800px) {
+    .categorytopbar{
+        display: none;
+    }
+
+}
+@media (max-width: 800px) {
+    .CategorySelector{
+        display: flex !important;
+    }
+}

@@ -1,0 +1,36 @@
+/* Cancel.css */
+
+.cancel-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .cancel-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .cancel-message {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .continue-shopping-link {
+    text-decoration: none;
+  }
+  
+  .continue-shopping-btn {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .continue-shopping-btn:hover {
+    background-color: #0056b3;
+  }

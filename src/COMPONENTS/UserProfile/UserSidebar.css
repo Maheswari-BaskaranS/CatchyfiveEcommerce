@@ -1,0 +1,99 @@
+.usersidebar {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.usersidebar .s1 , .usersidebar .s2{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+}
+
+.usersidebar  svg {
+    width: 30px;
+    height: 30px;
+    color: gray;
+}
+
+.usersidebar .s1:hover{
+    background-color: rgb(243, 246, 249);
+    border-radius: 5px;
+    cursor: pointer;
+    color: grey;
+}
+
+.usersidebar .s2{
+    background-color: rgb(243, 246, 249);
+    border-radius: 5px;
+    cursor: pointer;
+    color: grey;
+}
+
+.usersidebar span{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+.usersidebar {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  @media (max-width: 768px) {
+    .usersidebar {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+        justify-content: space-around;
+    }
+  
+    .usersidebar .s1, .usersidebar .s2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 10px;
+      justify-content: center;
+    }
+  
+    .usersidebar svg {
+      width: 20px;
+      height: 20px;
+      color: gray;
+    }
+  
+    .usersidebar .s1:hover {
+      background-color: rgb(243, 246, 249);
+      border-radius: 5px;
+      cursor: pointer;
+      color: grey;
+    }
+  
+    .usersidebar .s2 {
+      background-color: rgb(243, 246, 249);
+      border-radius: 5px;
+      cursor: pointer;
+      color: grey;
+    }
+  
+    .usersidebar span {
+      font-size: 12px;
+      font-weight: 500;
+      text-align: center;
+    }
+  }
+
+
+
+  @media (max-width: 400px) {
+    .usersidebar span {
+       display: none;
+      }
+  }

@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+:root {
+  --col1: rgb(2,178,144);
+  --col2: gray;
+  --col3: #cecece;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+}
+
+
+#dropdown-basic {
+  outline: none;
+  border: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.goback{
+  background-color: var(--col1);
+  color: white;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 13px;
+  cursor: pointer;
+  margin: 10px 0px;
+  display: flex;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  min-width: 100px;
+}
+
+.goback svg{
+  margin-right: 5px;
+  width: 15px;
+  height: 15px;
+}
+
+.stylenone{
+  text-decoration: none;
+  color: black;
+}
+
+.mainbutton1 {
+  background: var(--col1); /* Primary color background */
+  border: 2px solid var(--col1);
+  padding: 10px 20px; /* Compact size */
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0.5rem;
+  cursor: pointer;
+  color: white; /* White text */
+  display: flex;
+  justify-content: center; /* Centers icon */
+  align-items: center;
+  gap: 6px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover Effect */
+.mainbutton1:hover {
+  background-color: white;
+  color: var(--col1); /* Change text color */
+  transform: scale(1.03);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+/* Change Cart Icon Color on Hover */
+.mainbutton1:hover svg {
+  color: var(--col1) !important; /* Ensures icon changes color */
+  fill: var(--col1); /* Fills the icon if applicable */
+  transition: color 0.3s ease-in-out, fill 0.3s ease-in-out;
+}
+
+/* Active (Click) Effect */
+.mainbutton1:active {
+  transform: scale(0.96);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+.status-open { color: blue; }
+.status-confirmed { color: green; }
+.status-payment-received { color: darkgreen; }
+.status-picked { color: orange; }
+.status-packed { color: darkorange; }
+.status-rider-assigned { color: purple; }
+.status-out-for-delivery { color: darkred; }
+.status-delivered { color: green; font-weight: bold; }
+.status-return { color: red; }
+.status-refund { color: brown; }
+.status-unknown { color: gray; }
+
+.mainhead1 {
+  color: var(--col1);
+  font-size: 35px;
+  font-weight: 300;
+  padding: 5px 10px;
+  margin-top: 10px;
+}
+
+
+body::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  background-color: #f5f5f5;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--col1);
+  border-radius: 5px;
+}
+
+.mainhead2{
+  width: 100%;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}

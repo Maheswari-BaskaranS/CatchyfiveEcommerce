@@ -1,0 +1,172 @@
+.dropdowncomponent {
+    position: relative;
+}
+
+.dropdowncomponent h3 {
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.dropdowncomponent .s1 h3:hover {
+    color: var(--col1);
+}
+
+/* Category Styling */
+.category {
+    display: block;
+    text-align: left;
+    background: white;
+    padding: 12px 15px;
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: all 0.25s ease-in-out;
+}
+
+.category:hover {
+    background-color: #f9f9f9;
+    transform: scale(1.02);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.category h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #02B290;
+    margin-bottom: 8px;
+}
+
+.subcategory-list h3 {
+    font-size: 14px;
+    font-weight: 500;
+    color: #444;
+    transition: color 0.2s ease-in-out;
+}
+
+.subcategory-list h3:hover {
+    color: #02B290;
+}
+
+/* Dropdown Container */
+.dropdowncomponent .s1 {
+    background-color: white;
+    cursor: pointer;
+}
+
+/* Expanded Dropdown Content */
+.dropdowncomponent .s2 {
+    position: absolute;
+    z-index: 100;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    top: 55px;
+    left: 20px;
+    padding: 15px;
+    border-radius: 5px;
+ background: linear-gradient(to bottom, #ffffff, #f7f9fa);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    max-height: 500px; /* Adjusted for more items */
+    overflow-y: auto;
+}
+
+.view-more {
+    color: #ff007f;
+    font-weight: 500;
+    margin-top: 6px;
+    display: inline-block;
+    transition: transform 0.2s ease-in-out;
+}
+
+.view-more:hover {
+    transform: translateX(2px);
+    text-decoration: underline;
+}
+
+
+/* Handling Larger List */
+.dropdowncomponent .s2 .category {
+    width: 100%;
+    padding: 5px 15px;
+    color: rgb(89, 89, 89);
+}
+
+.dropdowncomponent .s2 .category:hover {
+    background-color: rgb(229, 231, 235);
+    color: black;
+}
+
+/* Scrollbar Customization */
+.dropdowncomponent .s2::-webkit-scrollbar {
+    width: 6px;
+}
+
+.dropdowncomponent .s2::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.dropdowncomponent .s2::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Additional Hover Effects */
+.droptitle {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.droptitle:hover {
+    color: #02B290;
+}
+
+.droptitle svg {
+    width: 15px;
+    height: 15px;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* Show more items on big screens */
+    gap: 10px;
+    justify-content: start;
+    align-items: start;
+    padding: 10px;
+    max-width: 1200px; /* Keep dropdown from becoming too wide */
+    margin: 0 auto;    /* Center it nicely */
+}
+
+@media (max-width: 1200px) {
+    .category-grid {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+@media (max-width: 1024px) {
+    .category-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .dropdowncomponent .s2 {
+        max-height: 350px;
+        overflow-y: auto; /* Add scroll if too many categories */
+    }
+}
+
+@media (max-width: 480px) {
+    .category-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .dropdowncomponent .s2 {
+        max-height: 280px;
+        overflow-y: auto;
+    }
+}
+

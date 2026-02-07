@@ -1,0 +1,78 @@
+.category-slider-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 20px 0;
+  }
+  
+  .category-slider-container {
+    overflow: hidden;
+    width: 100%;
+    background: #fff;
+    padding: 40px 0;
+    position: relative;
+    white-space: nowrap;
+  }
+  
+  .category-slider {
+    display: flex;
+    gap: 20px;
+    width: max-content;
+    animation: scroll 150s linear infinite;
+  }
+  
+  .category-box {
+    min-width: 150px;
+    background: #f4f4f4;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    text-decoration: none; /* Remove underline from links */
+    color: black; /* Ensure text color is visible */
+  }
+  
+  .category-box:hover {
+    transform: scale(1.05);
+  }
+  
+  .category-icon {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 8px;
+  }
+  
+  /* Centered Title */
+  .slider-title {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 200;
+    /* color: #265806; */
+    color: rgb(14, 14, 14);
+    margin-bottom: 20px;
+    padding: 10px 0;
+    position: relative;
+    z-index: 2;
+    
+   
+    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3), 
+                 0px 0px 10px rgba(38, 88, 6, 0.5);  */
+}
+
+  
+  
+  /* Continuous scrolling */
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  

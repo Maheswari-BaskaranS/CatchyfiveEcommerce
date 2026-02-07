@@ -1,0 +1,60 @@
+/* For Webkit browsers like Chrome or Safari */
+.product-scroll-box::-webkit-scrollbar {
+  width: 8px; /* Adjust the width as needed */
+}
+
+.product-scroll-box::-webkit-scrollbar-thumb {
+  background-color: #b0b0b0; /* Color of the scrollbar thumb */
+  border-radius: 4px; /* Rounded corners for the thumb */
+}
+
+/* For Firefox */
+.product-scroll-box {
+  scrollbar-width: thin; /* Adjust the width as needed */
+}
+
+.product-scroll-box::-webkit-scrollbar-thumb {
+  background-color: #b0b0b0; /* Color of the scrollbar thumb */
+  border-radius: 4px; /* Rounded corners for the thumb */
+}
+
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 16px;
+  padding-right: 56px;
+  gap: 16px;
+}
+
+body, html {
+  overflow-x: hidden;
+}
+
+
+.pagination-btn {
+  width: 110px;
+  padding: 8px 16px;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s ease;
+}
+
+.pagination-btn:hover {
+  background-color: #2563eb;
+}
+
+.pagination-btn:disabled {
+  background-color: #d1d5db;
+  cursor: not-allowed;
+}
+
+@media (max-width: 500px) {
+  .product-scroll-box::-webkit-scrollbar {
+    display: none;
+  }
+}

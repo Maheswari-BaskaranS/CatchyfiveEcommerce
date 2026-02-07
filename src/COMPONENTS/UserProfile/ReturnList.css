@@ -1,0 +1,137 @@
+.returnorders table {
+    width: 100%;
+    border-collapse: collapse;
+    border: none; /* Remove table borders */
+}
+
+.returnorders table th, 
+.returnorders table td {
+    padding: 10px;
+    border-bottom: 1px solid rgb(207, 207, 207); /* Keep only bottom borders */
+    text-align: left;
+}
+
+.returnorders table tr:last-child td {
+    border-bottom: none; /* Remove bottom border for the last row */
+}
+
+.returnorders table tr:nth-child(even) {
+    background-color: #f9f9f9; /* Add a subtle background for alternating rows */
+}
+
+/* Modal Styling */
+.modal-dialog {
+    max-width: 700px; /* Increase modal width */
+    width: 90%;
+}
+
+.modal-contents {
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border: none;
+    width: 700px;
+    padding: 20px;
+    
+    text-align: center;
+}
+
+   
+
+.modal-header {
+    color: var(--col1);
+    border-radius: 12px 12px 0 0;
+    
+}
+
+.modal-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+.modal-body {
+    padding: 20px;
+    font-size: 16px;
+    background: #f8f9fa;
+}
+
+.modal-body table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.modal-body th {
+    background-color: #02B290;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+.modal-body td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Close Button */
+.modal-header .btn-close {
+    color: white;
+    font-size: 18px;
+}
+
+/* Button Styling */
+.mainbutton1 {
+    background: var(--col1); /* Primary color background */
+    border: 2px solid var(--col1);
+    padding: 10px 20px; /* Compact size */
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0.5rem;
+    cursor: pointer;
+    color: white; /* White text */
+    display: flex;
+    justify-content: center; /* Centers icon */
+    align-items: center;
+    width:60px;
+    gap: 6px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Hover Effect */
+  .mainbutton1:hover {
+    background-color: white;
+    color: var(--col1); /* Change text color */
+    transform: scale(1.03);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+  }
+  
+  /* Change Cart Icon Color on Hover */
+  .mainbutton1:hover svg {
+    color: var(--col1) !important; /* Ensures icon changes color */
+    fill: var(--col1); /* Fills the icon if applicable */
+    transition: color 0.3s ease-in-out, fill 0.3s ease-in-out;
+  }
+  .mainbutton1:active {
+    transform: scale(0.96);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  }
+  
+
+/* Footer */
+.modal-footer {
+    background-color: #f1f1f1;
+    border-radius: 0 0 12px 12px;
+}
+
+/* Close Button */
+.modal-footer .btn-secondary {
+    background-color: #dc3545;
+    color: white;
+    border-radius: 6px;
+    padding: 10px 15px;
+}
+
+.modal-footer .btn-secondary:hover {
+    background-color: #c82333;
+}

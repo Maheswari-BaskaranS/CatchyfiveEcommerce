@@ -1,0 +1,105 @@
+.allproducts {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    /* background-color: aqua; */
+}
+.allproducts .header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.allproducts h1 {
+    font-size: 16px;
+    text-align: left;
+    margin-left: 10px;
+    font-weight: 500;
+    margin-bottom: 0px;
+}
+
+
+.allproducts .products {
+    /* grid */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    /* width: 100%; */
+    margin: 0;
+    margin-bottom: 20px;
+    /* grid */
+}
+
+.allproducts .sortby {
+    border: none;
+    outline: none;
+    background-color: #f9f9f9; /* Light background color for contrast */
+    width: auto; /* Adjust width to fit content */
+    display: inline-flex; /* Align items horizontally */
+    justify-content: flex-start;
+    align-items: center; /* Align vertically */
+    padding: 8px 12px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.allproducts .sortby:hover {
+    background-color: #e6e6e6; /* Light hover background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Deep shadow on hover */
+}
+
+.allproducts .sortby select {
+    border: none;
+    outline: none;
+    background-color: transparent; /* Transparent background */
+    font-size: 17px;
+    font-weight: 500;
+    color: #333; /* Dark text color for better readability */
+    padding: 8px;
+    border-radius: 6px; /* Rounded corners for the select box */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.allproducts .sortby select:hover {
+    background-color: #e6e6e6; /* Light hover effect */
+    color: #000;
+}
+
+
+
+@media screen  and (max-width: 1250px){
+    .allproducts .products {
+        /* grid */
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+        /* width: 100%; */
+        margin: 0;
+        margin-bottom: 20px;
+        /* grid */
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .allproducts .products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    .allproducts .products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .allproducts .products {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

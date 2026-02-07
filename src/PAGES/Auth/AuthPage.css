@@ -1,0 +1,332 @@
+/* .authpage{
+    width: 100%;
+    min-height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.authcont{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 80%;
+    height: 80vh;
+    box-shadow:  0 0 10px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    background-color: rgba(0, 0, 0, 0.798);
+}
+
+.authcont img{
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.authform{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 20px;
+    gap: 5px;
+}
+
+.authcont .formgroup {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+    margin: 10px 0px;
+}
+
+
+.authform h1{
+    font-size: 50px;
+    font-weight: 500;
+    color: var(--col1);
+}
+.authform label{
+    font-size: 17px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+}
+
+
+.authform input{
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    outline: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.042);
+}
+
+
+.authform button{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    background-color: var(--col1);
+    cursor: pointer;
+}
+.authform button:hover{
+    background-color: white;
+    color: var(--col1);
+}
+
+.authform p{
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    text-align: left;
+}
+.authform p:hover{
+    color: var(--col1);
+    cursor: pointer;
+}
+.authform .or{
+    text-align: center;
+    margin: 10px 0px;
+    padding: 0px;
+    font-size: 20px;
+    color: white;
+}
+.form-group-row{
+    display: flex;
+    gap: 10px;
+} 
+
+ */
+/* Base styles */
+.authpage {
+    width: 100%;
+    min-height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.authcont {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 75%;
+    min-height: 50vh;
+    /* box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2); */
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px auto;
+    /* background-color: white; */
+    background-color: rgba(0, 0, 0, 0.798);
+    margin-top: 50px;
+}
+
+.authcont img {
+    width: 55%; 
+    max-height: auto; 
+    object-fit: cover;
+}
+.authform {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 1em;
+    gap: 0.5em; 
+}
+
+.authcont .formgroup {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em; 
+    width: 100%;
+    margin: 1em 0;
+}
+
+.authform h1 {
+    font-size: 2em; 
+    font-weight: 500;
+    color: var(--col1);
+}
+
+.authform label {
+    font-size: 0.85em; 
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+}
+
+.authform input {
+    padding: 0.5em; 
+    border: 1px solid white;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1em; 
+    font-weight: 500;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.042);
+}
+
+.authform button {
+    width: 100%;
+    padding: 0.5em; 
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1em; 
+    font-weight: 500;
+    color: white;
+    background-color: var(--col1);
+    cursor: pointer;
+}
+
+.authform p {
+    font-size: 1em; 
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.authform .or {
+    text-align: center;
+    margin: 0.5em 0;
+    padding: 0;
+    font-size: 1em; 
+    color: white;
+}
+
+.form-group-row {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+
+@media (max-width: 768px) {
+    .authcont {
+        width: 90%;
+    }
+
+    .authform {
+        width: 100%;
+    }
+
+    .authcont img {
+        width: 100%; /* Adjusted image width for smaller screens */
+    }
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #02b290;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #029a7f;
+    color: white !important; /* Ensuring text color doesn't change */
+    transform: scale(1.05);
+  }
+  
+  button:active {
+    background-color: #027a64;
+  }
+  
+  button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+/* General button styles */
+.buttons {
+    background-color: #02b290; /* Primary button color */
+    color: white;
+    border: none;
+    padding: 12px 16px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+    text-align: center;
+}
+
+/* Ensure hover color remains correct */
+.buttons:hover {
+    background-color: #029b7d !important; /* Darker green */
+    color: white !important; /* Ensuring text color doesn't change */
+    transform: scale(1.05);
+}
+
+/* Disabled button styles */
+.buttons:disabled {
+    background-color: #bfbfbf;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+/* Send OTP button */
+.send-otp-button {
+    background-color: #029a7f;
+    color: white;
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.send-otp-button:hover {
+    background-color: #029a7f !important;
+    color: white !important;
+    transform: scale(1.05);
+}
+
+.send-otp-button:disabled {
+    background-color: #d3d3d3;
+    color: white;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+.password-container {
+    position: relative;
+  }
+  
+  .password-container input {
+    width: 100%;
+    padding-right: 40px; /* Add some padding to the right to accommodate the icon */
+  }
+  
+  .eye-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: gray; /* Optional: change the color of the icon */
+  }
+  

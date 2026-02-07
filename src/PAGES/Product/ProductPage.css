@@ -1,0 +1,488 @@
+.productpage .pc1 {
+    padding-top: 5%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+}
+
+.productpage .pc1 .c11 {
+    display: flex;
+    justify-content: flex-start;
+    width: 60%;
+    gap: 20px;
+}
+
+.productpage .pc1 .c11 .imgset {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.productpage .pc1 .c11 .imgset img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+    border: 1px solid lightgrey;
+    padding: 20px;
+}
+
+
+.productpage .pc1 .c11 .imgset .active {
+    border: 1px solid var(--col1);
+    width: 95%;
+}
+
+.productpage .pc1 .c11 .imgbig {
+    width: 70%;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    aspect-ratio: 1/1;
+    border: 1px solid lightgrey;
+    padding: 10%;
+}
+
+/* c12 */
+.productpage .c12 {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    gap: 15px;
+}
+
+.productpage .c12 h1 {
+    font-size: 24px;
+    font-weight: 500;
+    color: black;
+    margin: 10px 0px;
+}
+
+.productpage .c12 h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: black;
+    margin: 10px 0px;
+}
+
+.productpage .c12 .qty {
+    display: flex;
+    width: 100%;
+    background-color: rgb(243, 245, 249);
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 5px;
+    border-radius: 5px;
+
+}
+
+.productpage .c12 .qty span {
+
+    border: none;
+    background-color: inherit;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    color: rgb(35, 35, 35);
+    margin: 0px;
+    text-align: center;
+    padding: 0px;
+}
+
+.productpage .c12 .qty button {
+    border: none;
+    background-color: inherit;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    color: rgb(29, 29, 29);
+    cursor: pointer;
+}
+
+.productpage .c12 .addtocart {
+    width: 100%;
+    height: 50px;
+    border: none;
+    background-color: var(--col1);
+    opacity: 0.4;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    border-radius: 5px;
+}
+
+.productpage .c12 .addtocart svg {
+    width: 30px;
+}
+
+.productpage .c12 .addtocart:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+/*  */
+.productpage .pc2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* background-color: aqua; */
+}
+
+.productpage .pc2 .tabs {
+    display: flex;
+    margin: 20px 0px;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.productpage .pc2 .tabs .active {
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--col1);
+    cursor: pointer;
+    border-bottom: 2px solid var(--col1);
+    margin: 0px 10px;
+    background-color: white;
+}
+
+.productpage .pc2 .tabs .inactive {
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: gray;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    margin: 0px 10px;
+    background-color: white;
+}
+
+.productpage .reviewcont {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 30px;
+}
+
+.productpage form {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: flex-start;
+    width: 70%;
+    max-width: 700px;
+}
+
+.productpage form .fromgroup {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
+}
+
+.productpage .reviewcont form div label {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--col1);
+}
+
+.productpage .reviewcont form div input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid var(--col1);
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+
+
+.productpage .reviewcont form div textarea {
+    width: 100%;
+    min-height: 100px;
+    border: 1px solid var(--col1);
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+
+.productpage .reviewcont button {
+    width: 200px;
+    height: 50px;
+    border: none;
+    background-color: var(--col1);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 20px 0px;
+}
+
+.productpage .allreview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    max-width: 700px;
+    margin-top: 50px;
+
+}
+
+.productpage .allreview .head1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--col1);
+    font-weight: 300;
+    font-size: 25px;
+    color: var(--col1);
+}
+
+.productpage .allreview .review {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px 0px;
+}
+
+.productpage .reviewhead {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 20px 0px;
+    position: relative;
+}
+
+.productpage .reviewhead p {
+    margin: 0px;
+    padding: 0px;
+    font-size: 18px;
+    color: var(--col1);
+    position: absolute;
+    left: 0px;
+}
+
+.productpage .reviewhead span {
+    background-color: var(--col1);
+    margin: 0px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    color: white;
+    margin-left: 10px;
+}
+
+.productpage .reviewbody {
+    font-size: 14px;
+}
+
+.productpage .desc {
+    width: 70%;
+    max-width: 900px;
+    align-self: center;
+    font-size: 15px;
+}
+
+.productpage .rating {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0px;
+}
+
+.productpage .rating .starinactive {
+    color: lightgray;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.productpage .rating .starinactive:hover {
+    color: var(--col1);
+}
+
+
+.productpage .rating .staractive {
+    color: gold;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    fill: gold;
+}
+
+
+
+.productpage .rating1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0px;
+}
+
+.productpage .rating1 .starinactive {
+    color: lightgray;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.productpage .rating1 .starinactive:hover {
+    color: var(--col1);
+}
+
+
+.productpage .rating1 .staractive {
+    color: gold;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    fill: gold;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1150px) {
+    .productpage .desc {
+        width: 95%;
+        max-width: max-content;
+        align-self: center;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .productpage .pc1 {
+        /* background-color: aqua; */
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    .productpage .pc1 .c11 {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        gap: 20px;
+        /* background-color: aqua; */
+    }
+
+    .productpage .pc1 .c11 .imgset {
+        width: 20%;
+    }
+
+    .productpage .pc1 .c11 .imgbig {
+        width: 80%;
+        max-height: 400px;
+        object-fit: contain;
+    }
+
+    .productpage .pc1 .c12 {
+        width: 100%;
+        gap: 5px;
+    }
+
+
+
+
+    .productpage .c12 h1 {
+        font-size: 17px;
+        font-weight: 500;
+        color: black;
+        margin: 5px 0px;
+        margin-top: 10px;
+    }
+
+    .productpage .c12 h2 {
+        font-size: 15px;
+        font-weight: 600;
+        color: black;
+        margin: 5px 0px;
+    }
+
+    .productpage .c12 .qty {
+        display: flex;
+        width: 100%;
+        background-color: rgb(243, 245, 249);
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        padding: 5px;
+        border-radius: 5px;
+
+    }
+
+    .productpage .c12 .qty span {
+
+        border: none;
+        background-color: inherit;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 500;
+        color: rgb(35, 35, 35);
+        margin: 0px;
+        text-align: center;
+        padding: 0px;
+    }
+
+    .productpage .c12 .qty button {
+        border: none;
+        background-color: inherit;
+        text-align: center;
+        font-size: 20px;
+        font-weight: 500;
+        color: rgb(29, 29, 29);
+        cursor: pointer;
+    }
+
+    .productpage .c12 .addtocart:hover {
+        opacity: 1;
+        cursor: pointer;
+    }
+
+
+
+    
+.productpage .pc2 .tabs {
+    display: flex;
+    margin: 10px 0px;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.productpage .pc2 .tabs .active {
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--col1);
+    cursor: pointer;
+    border-bottom: 2px solid var(--col1);
+    margin: 0px 10px;
+    background-color: white;
+}
+
+.productpage .pc2 .tabs .inactive {
+    border: none;
+    font-size: 12px;
+    font-weight: 600;
+    color: gray;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    margin: 0px 10px;
+    background-color: white;
+}
+}
